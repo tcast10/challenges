@@ -23,8 +23,12 @@ class Deck
       end
     end
 
-  @cards.shuffle!
+    @cards.shuffle!
   end
+
+ # def shuffle
+ #   @cards.shuffle!
+ # end
 
   def deal (number)
     number.times {@cards.shift.output_card}
