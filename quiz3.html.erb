@@ -1,0 +1,36 @@
+class Dog
+  attr_accessor :name, :breed
+
+  def initialize(name, breed)
+    @name = name
+    @breed = breed
+  end
+
+  def output_dog
+    puts "Your dog's name is #{@name} and it is a #{@breed}!"
+  end
+
+end
+
+dog = Dog.new("Thor", "Boxer")
+dog.name = "Kai"
+
+dog.output_dog
+
+#dog.breed = "Poodle"
+#puts dog.name
+#puts dog.breed
+  
+#boxer = Dog.new("Kai", "Boxer")
+#poodle = Dog.new("Princess", "Poodle")
+#huskie = Dog.new("Scar", "Huskie")
+
+
+# puts "Enter a dog name:"
+# doggo = gets.chomp
+
+# puts "Enter a dog breed:"
+# breedo = gets.chomp
+
+# output = "You have a #{doggo} and it is a #{breedo}."
+# puts output
